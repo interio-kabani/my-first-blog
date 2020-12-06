@@ -1,0 +1,57 @@
+h1{
+    color:rgba(255, 166, 0, 0.932);
+    font-size: 40px;
+    
+}
+
+h2{
+    color:rgba(255, 166, 0, 0.932);
+    font-size: 20px;
+    
+}
+h3{
+    color:rgba(255, 166, 0, 0.932);
+    font-size: 20px;
+}
+
+div{
+    text-align : center ;
+}
+
+
+button {
+    color: black;
+    padding: 10px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.has-shadow { /* 記述なし */
+}
+
+.clear-decoration {
+    border: none;  /* 枠線を消す */
+    outline: none; /* クリックしたときに表示される枠線を消す */
+    background: transparent; /* 背景の灰色を消す */
+}
+
+.decorated {
+    cursor: pointer; /* マウスカーソルを乗せると指になる */
+    outline: none;
+    border: 1px solid black;
+    background-color: rgba(133, 130, 130, 0.2);
+}
+
+.image {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #000;
+    background: transparent;
+}
+
+.image img {
+    height: 100px;
+    width: 100px;
+}
+

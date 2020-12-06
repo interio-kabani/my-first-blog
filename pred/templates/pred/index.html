@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="ja">
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <title>見張りマン</title>
+    </head>
+    
+<body>
+
+
+    <div>
+        <h1>
+        見張りマン
+        </h1>
+    </div>
+    
+    
+    
+
+    <hr size="5" wideth="100" align="center" noshade"">
+    <script>
+        function kakunin(){
+            var myip = document.getElementById("myid");
+ 
+                myip.innerHTML ="hello world";
+    </script>
+    
+
+<form method="POST" action="{% url 'index' %}">
+    {% csrf_token %}
+    <div>
+        <button type="submit" onclick="func1()" class="decorated">start</button>
+        <script>
+            var func1 = function () {
+          alert("計測を開始します");
+          }
+        </script>
+    
+    </div>
+    
+    
+    
+    <div>
+        
+        <h2>
+            点数一覧: {{ app }}
+        </h2>
+        <img src= "/mysite1/image.png" width=300 height=300 >
+
+        <h3>
+            切れかけ: {{ app2 }}秒
+        </h3>
+
+    </div>
+
+
+
+
+</form>
+    
+</body>
+
+</html>
